@@ -1,3 +1,5 @@
+'use client'
+
 import { LucideCalendar, LucideMessageCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -6,13 +8,20 @@ export default function Footer() {
   const whatsappLink =
     "https://wa.me/5531995116886?text=Hi!%20I'm%20interested%20in%20a%20landing%20page%20from%20SoftTrail%20for%20my%20business."
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="relative py-16 overflow-hidden bg-[#020202]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center mb-4">
-              <Image src="https://kokonutui.com/logo.svg" alt="SoftTrail Logo" width={30} height={30} />
+              <Image src="/softtrail-logo.png" alt="SoftTrail Logo" width={30} height={30} className="rounded-lg" />
               <span className="ml-2 text-xl font-bold text-white">SoftTrail</span>
             </Link>
             <p className="text-zinc-200 mb-6">High-converting landing pages that drive real business results.</p>
@@ -21,30 +30,23 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-medium mb-4">Services</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
+              <li className="text-zinc-200 hover:text-white transition-colors">
                   Landing Pages
-                </Link>
               </li>
-              <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
+              <li className="text-zinc-200 hover:text-white transition-colors">
                   SEO Optimization
-                </Link>
               </li>
-              <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
+              <li className="text-zinc-200 hover:text-white transition-colors">
                   Conversion Rate Optimization
-                </Link>
               </li>
-              <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
-                  A/B Testing
-                </Link>
+              <li className="text-zinc-200 hover:text-white transition-colors">
+                  CRM&apos;s
               </li>
-              <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
-                  Analytics Setup
-                </Link>
+              <li className="text-zinc-200 hover:text-white transition-colors">
+                  E-commerces
+              </li>
+              <li className="text-zinc-200 hover:text-white transition-colors">
+                  Mobile Apps
               </li>
             </ul>
           </div>
@@ -53,28 +55,38 @@ export default function Footer() {
             <h3 className="text-white font-medium mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
-                  Case Studies
+                <button onClick={() => scrollToSection('why-choose-us')} className="text-zinc-200 hover:text-white transition-colors">
+                  Why Choose Us
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection('launch-process')} className="text-zinc-200 hover:text-white transition-colors">
+                  Our Simple Process
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection('pricing')} className="text-zinc-200 hover:text-white transition-colors">
+                  Special Offers
+                </button>
+              </li>
+              <li>
+                <Link 
+                  href="https://calendly.com/softtrail/briefing" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-zinc-200 hover:text-rose-400 transition-colors"
+                >
+                  Free Consultation
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
-                  Guides
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-zinc-200 hover:text-white transition-colors">
-                  Support
+                <Link 
+                  href={whatsappLink}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-zinc-200 hover:text-green-500 transition-colors"
+                >
+                  Get a Quote
                 </Link>
               </li>
             </ul>

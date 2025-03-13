@@ -49,7 +49,7 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-24 overflow-hidden" id="why-choose-us">
       <div className="absolute inset-0 bg-gradient-to-b from-[#030303] via-[#050505] to-[#030303]" />
 
       <div className="relative z-10 container mx-auto px-4 md:px-6">
