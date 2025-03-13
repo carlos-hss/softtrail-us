@@ -2,7 +2,7 @@ import HeroGeometric from "@/components/hero-geometric"
 import ValuePropositionSection from "@/components/value-proposition-section"
 import HowItWorksSection from "@/components/how-it-works-section"
 import PricingPlansSection from "@/components/pricing-plans-section"
-import TestimonialsSection from "@/components/testimonials-section"
+// import TestimonialsSection from "@/components/testimonials-section"
 import SpecialOfferSection from "@/components/special-offer-section"
 import BenefitsSection from "@/components/benefits-section"
 import WhatsAppButton from "@/components/whatsapp-button"
@@ -16,7 +16,7 @@ export default function Home() {
       <BenefitsSection />
       <HowItWorksSection />
       <PricingPlansSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <SpecialOfferSection />
       <Footer />
       <WhatsAppButton />
