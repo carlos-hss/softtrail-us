@@ -20,7 +20,7 @@ export default function SpecialOfferSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto text-center p-8 md:p-12 rounded-3xl bg-gradient-to-br from-rose-500/10 to-indigo-500/10 border border-white/[0.08] backdrop-blur-sm"
+          className="max-w-5xl mx-auto text-center p-8 md:p-12 rounded-3xl bg-gradient-to-br from-rose-500/10 to-indigo-500/10 border border-white/[0.08] backdrop-blur-sm"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
             <LucideClock className="h-4 w-4 text-rose-400" />

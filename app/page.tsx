@@ -8,6 +8,8 @@ import BenefitsSection from "@/components/benefits-section"
 import WhatsAppButton from "@/components/whatsapp-button"
 import Footer from "@/components/footer"
 import CalendlyButton from "@/components/calendly-button"
+import CTASection from "@/components/cta-section"
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#030303]">
@@ -17,6 +19,7 @@ export default function Home() {
       <HowItWorksSection />
       <PricingPlansSection />
       {/* <TestimonialsSection /> */}
+      <CTASection />
       <SpecialOfferSection />
       <Footer />
       <WhatsAppButton />
