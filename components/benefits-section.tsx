@@ -99,7 +99,7 @@ export default function BenefitsSection() {
               </h2>
               <p className="text-white/60 mb-8">
                 We combine strategic design, technical expertise, and conversion optimization to create landing pages
-                that don't just look good—they deliver measurable results.
+                that don&apos;t just look good—they deliver measurable results.
               </p>
             </motion.div>
 

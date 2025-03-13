@@ -101,7 +101,7 @@ export default function PricingPlansSection() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500/20 to-emerald-500/5 border border-emerald-500/20 mb-12"
           >
             <span className="text-emerald-400 font-medium">100% Satisfaction Guarantee:</span>
-            <span className="text-white/70">Unlimited revisions until you're completely satisfied</span>
+            <span className="text-white/70">Unlimited revisions until you&apos;re completely satisfied</span>
           </motion.div>
         </div>
 

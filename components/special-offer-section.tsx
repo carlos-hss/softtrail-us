@@ -67,7 +67,7 @@ export default function SpecialOfferSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-4">
                     <p className="text-white font-medium mb-2">Schedule a free 30-minute briefing call</p>
-                    <p className="text-white/70 text-sm mb-4">We'll discuss your goals and how we can help</p>
+                    <p className="text-white/70 text-sm mb-4">We&apos;ll discuss your goals and how we can help</p>
                   </div>
                 </div>
 
@@ -94,7 +94,7 @@ export default function SpecialOfferSection() {
 
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20">
             <span className="text-emerald-400 font-medium">Money-Back Guarantee:</span>
-            <span className="text-white/70">If you're not satisfied with our work, we'll refund your payment</span>
+            <span className="text-white/70">If you&apos;re not satisfied with our work, we&apos;ll refund your payment</span>
           </div>
         </motion.div>
       </div>

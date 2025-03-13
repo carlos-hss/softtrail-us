@@ -142,7 +142,7 @@ export default function TestimonialsSection() {
           className="mt-12 text-center"
         >
           <p className="text-white/60 mb-6">
-            Join 200+ businesses who've increased their conversion rates with SoftTrail landing pages
+            Join 200+ businesses who&apos;ve increased their conversion rates with SoftTrail landing pages
           </p>
           <Link href="https://calendly.com/softtrail/briefing" target="_blank" rel="noopener noreferrer">
             <Button
