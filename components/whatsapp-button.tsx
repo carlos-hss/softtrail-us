@@ -46,13 +46,13 @@ export default function WhatsAppButton() {
       <AnimatePresence>
         {showTooltip && (
           <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="absolute bottom-full right-0 mb-2 p-3 bg-white rounded-lg shadow-lg max-w-[200px] text-sm text-gray-700 font-medium z-50"
+            className="absolute bottom-0 right-[calc(100%+10px)] p-3 bg-white rounded-lg shadow-lg text-sm text-gray-700 font-medium z-50 w-[200px]"
           >
             Need help? Chat with us on WhatsApp!
-            <div className="absolute bottom-[-6px] right-6 w-3 h-3 bg-white transform rotate-45"></div>
+            <div className="absolute top-1/2 -right-1.5 w-3 h-3 bg-white transform rotate-45 -translate-y-1/2"></div>
           </motion.div>
         )}
       </AnimatePresence>

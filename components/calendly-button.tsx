@@ -41,14 +41,14 @@ export default function CalendlyButton() {
   }, [])
 
   return (
-    <div className="fixed bottom-[70px] xl:bottom-24 right-4 xl:right-6 z-50">
+    <div className="fixed bottom-[70px] xl:bottom-24 right-4 xl:right-6 z-40">
       <AnimatePresence>
         {showTooltip && (
           <motion.div
             initial={{ opacity: 0, y: 10, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="absolute bottom-full right-0 mb-2 p-3 bg-white rounded-lg shadow-lg max-w-[200px] text-sm text-gray-700 font-medium"
+            className="absolute bottom-full right-0 mb-2 p-3 bg-white rounded-lg shadow-lg max-w-[200px] text-sm text-gray-700 font-medium z-40"
           >
             Schedule a Call
             <div className="absolute bottom-[-6px] right-6 w-3 h-3 bg-white transform rotate-45"></div>
